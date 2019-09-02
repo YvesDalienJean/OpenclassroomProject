@@ -1,0 +1,254 @@
+/* Feuille de styles CSS */
+
+@font-face {
+    font-family: 'tiresias_infofontregular';
+    src: url('Tiresias-Infofont-fontfacekit/Tiresias_Infofont-webfont.eot');
+    src: url('Tiresias-Infofont-fontfacekit/Tiresias_Infofont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Tiresias-Infofont-fontfacekit/Tiresias_Infofont-webfont.woff2') format('woff2'),
+         url('Tiresias-Infofont-fontfacekit/Tiresias_Infofont-webfont.woff') format('woff'),
+         url('Tiresias-Infofont-fontfacekit/Tiresias_Infofont-webfont.ttf') format('truetype'),
+         url('Tiresias-Infofont-fontfacekit/Tiresias_Infofont-webfont.svg#tiresias_infofontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background: url("../image/background.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /* Le fond ne sera pas répété */
+    background-position: center;
+    background-size: cover; /* Le fond couvrira l'ecran */
+    height: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+/*------------------ Style et couleur des textes ----------------*/
+
+h2{
+    font-family: sans-serif;
+    color: gold;
+}
+
+h1{
+    color: gold;    
+    font-family: 'tiresias_infofontregular';
+    text-align: center;
+}
+
+h1 + p{
+    text-align: center; 
+}
+
+p{ 
+    font-family: sans-pro;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+a{
+    color: skyblue;
+    text-decoration: none;
+}
+a:hover{
+    color: gold;
+    text-decoration: none;
+}
+
+ul li{
+    color: #ffffff;
+    font-family: sans-pro;
+    font-size: 1.1em;
+}
+ul li strong{
+    color: gold;
+    font-family: sans-pro;
+    font-size: 1.1em;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (min-width: 1024px)
+{
+
+/*---------------Alignement de la page ------------*/
+
+
+
+section{
+    width:100%;
+    padding:10px;
+}
+
+#presentation{
+    width: 100%;
+}
+
+nav{
+    width: 200px;
+    background-color: rgba(25,180,255,0.18);
+    color: #000;
+    height: 184%;
+    margin-left: -14px;
+    bottom: 0px;
+
+}
+
+figure:nth-child(1){
+    position: relative;
+    left: -26px;
+}
+figure:nth-child(2){
+    position: absolute;
+    left: -26px;
+    bottom:52;    
+}
+
+.nav_img{    
+    width: 136%;
+    border: 4px solid rgb(52, 139, 183);
+}
+
+figcaption{
+    color: #b4fffc;
+    font-weight: 600;
+    font-size:small;
+    line-height: 40px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 142px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between ;    
+    width: 94%;
+    margin: auto;
+}
+
+.imageflottante {
+    display: flex;
+    box-shadow: 1px 3px 10px black;
+    border: 5px solid gold;
+    border-radius: 6px;
+    max-height: 70%;
+}
+
+
+/*------------------ Style et couleur des textes ----------------*/
+
+h2{
+	font-family: sans-serif;
+	color: gold;
+}
+
+h1{
+	color: gold;	
+	font-family: 'tiresias_infofontregular';
+	text-align: center;
+}
+
+h1 + p{
+	text-align: center;	
+}
+
+p{ 
+	font-family: sans-pro;
+	font-size: 1.1em;
+	color: #ffffff;
+}
+
+a{
+	color: skyblue;
+	text-decoration: none;
+}
+a:hover{
+	color: gold;
+	text-decoration: none;
+}
+
+ul li{
+	color: #ffffff;
+	font-family: sans-pro;
+	font-size: 1.1em;
+}
+ul li strong{
+	color: gold;
+	font-family: sans-pro;
+	font-size: 1.1em;
+}
+
+}
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1023.98px)
+{
+/*---------------Alignement de la page ------------*/
+
+
+
+section{
+    width:100%;
+    padding:10px;
+}
+
+#presentation{
+    width: 100%;
+}
+
+/*---------- Enlever le lisere dans le mobile----------*/
+
+figure:nth-child(1){
+    position: fixed;
+    left: -26px;
+    display:none;
+}
+figure:nth-child(2){
+    position: absolute;
+    left: -26px;
+    bottom:52;
+    display:none;
+}
+
+.nav_img{    
+    width: 38%;
+    border: 4px solid rgb(52, 139, 183);
+    display: none;
+}
+
+figcaption{
+    color: #b4fffc;
+    font-weight: 600;
+    font-size:small;
+    line-height: 40px;
+    display: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 142px;
+}
+
+.section1{
+    /*display: flex;*/
+    justify-content: space-between ;    
+    width: 94%;
+    margin: auto;
+}
+
+.imageflottante {
+    display: flex;
+    box-shadow: 1px 3px 10px black;
+    border: 5px solid gold;
+    border-radius: 6px;
+    max-height: 70%;
+}
+
+
+
+}
